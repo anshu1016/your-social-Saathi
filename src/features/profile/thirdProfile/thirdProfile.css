@@ -1,0 +1,379 @@
+/* .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .innerContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details {
+    text-align: center;
+  }
+  
+  .username {
+    margin-bottom: 10px;
+  }
+  
+  .username h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .username h6 {
+    font-size: 14px;
+    margin: 0;
+    color: gray;
+  }
+  
+  .headerFunctionality {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .edit button,
+  .logout button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit button:hover,
+  .logout button:hover {
+    background-color: #145fbd;
+  }
+  
+  .logout button {
+    background-color: #f02849;
+  }
+  
+  .bio p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .links div {
+    margin-right: 10px;
+    color: blue;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .links div:hover {
+    color: #145fbd;
+  }
+  
+  .followTable {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .followTable div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .followTable div:hover {
+    color: #145fbd;
+  }
+  
+  .posts,
+  following,
+  follower {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .posts {
+    color: #1877f2;
+  }
+  
+  .follower {
+    color: #f02849;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .innerContainer {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    .imageContainer {
+      margin-bottom: 10px;
+    }
+    
+    img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .username h4 {
+      font-size: 16px;
+    }
+    
+    .username h6 {
+      font-size: 12px;
+    }
+    
+    .headerFunctionality {
+      margin-bottom: 10px;
+    }
+    
+    .edit button,
+    .logout button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+    
+    .bio p {
+      font-size: 12px;
+    }
+    
+    .links div {
+      margin-right: 5px;
+    }
+    
+    .followTable div {
+      font-size: 14px;
+    }
+  }
+   */
+
+   .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .innerContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details {
+    text-align: center;
+  }
+  
+  .username {
+    margin-bottom: 10px;
+  }
+  
+  .username h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .username h6 {
+    font-size: 14px;
+    margin: 0;
+    color: gray;
+  }
+  
+  .headerFunctionality {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .edit button,
+  .logout button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit button:hover,
+  .logout button:hover {
+    background-color: #145fbd;
+  }
+  
+  .logout button {
+    background-color: #f02849;
+  }
+  
+  .bio p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .links div {
+    margin-right: 10px;
+    color: blue;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .links div:hover {
+    color: #145fbd;
+  }
+  
+  .followTable {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .followTable div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .followTable div:hover {
+    color: #145fbd;
+  }
+  
+  .posts,
+  following,
+  follower {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .posts {
+    color: #1877f2;
+  }
+  
+  .follower {
+    color: #f02849;
+  }
+  
+  .modalFollowing {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    max-width: 90%;
+  }
+  
+  .closeButton {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    color: red;
+  }
+  
+  .followersTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .followerCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .followerImage {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .followerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .followerName {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+  }
+  

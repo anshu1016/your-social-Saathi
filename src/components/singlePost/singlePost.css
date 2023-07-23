@@ -1,0 +1,259 @@
+/* singlePost.css */
+
+.mainPostContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.innerBlock {
+  width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.headingBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items between left and right */
+  margin-bottom: 16px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.userDetails img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userDetails .userName {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.userDetails .userName h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.userDetails .userName p {
+  font-size: 14px;
+  
+  margin: 0;
+}
+
+.calendar {
+  font-size: 12px;
+  color: #888888;
+  margin-top: 4px;
+}
+
+.menuIcon {
+  margin-right: 0;
+  font-size: 24px;
+  color: #888888;
+  cursor: pointer;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.imageContainer {
+  width: 80%;
+  height: 250px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.buttons span {
+  display: flex;
+  align-items: center;
+}
+
+.buttons span svg {
+  margin-right: 4px;
+}
+
+.buttons span:hover {
+  color: red;
+}
+
+.allComments {
+  color: #888888;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.comments-added {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.single-profile-photo-comment {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comments-add-by-user {
+  flex-grow: 1;
+}
+
+.deleteFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.delete-icon {
+  font-size: 14px;
+  color: #888888;
+  cursor: pointer;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Dark mode styles */
+
+/* .bgSecondaryDarkMode {
+  background-color: #333333;
+}
+
+.bgDarkmode {
+  background-color: #333333;
+  color: #ffffff;
+} */
+@media (max-width: 768px) {
+  .mainPostContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .innerBlock {
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width based on your design preferences */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+  }
+
+  .headingBlock {
+   
+    margin-bottom: 12px;
+  }
+
+  .userDetails {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    
+  }
+  .userDetails .user{
+    display: flex;
+    /* flex-direction: column; */
+    
+  }
+
+  .userDetails img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .userDetails .userName h4 {
+    font-size: 14px;
+  }
+
+  .userDetails .userName p {
+    font-size: 12px;
+  }
+
+  .text p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .imageContainer {
+    height: 200px;
+    margin-bottom: 12px;
+  }
+
+  .postBottom {
+    margin-top: 12px;
+  }
+
+  .allComments {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .single-profile-photo-comment {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+
+  .user-name {
+    font-size: 12px;
+  }
+
+  .delete-icon {
+    font-size: 12px;
+  }
+
+  .comment-text {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,162 @@
+/* profile.css */
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.innerContainer {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.details {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.username h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.username h6 {
+  font-size: 16px;
+}
+
+.bio p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.links a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #555555;
+}
+
+.calendar {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 8px;
+}
+
+.followTable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.posts,
+.following,
+.follower {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.posts:hover,
+.following:hover,
+.follower:hover {
+  color: red;
+}
+
+.post {
+  margin-top: 16px;
+}
+
+/* Dark mode styles */
+
+/* .bgSecondaryDarkMode {
+  background-color: #333333;
+}
+
+.bgDarkmode {
+  background-color: #333333;
+  color: #ffffff;
+} */
+
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .innerContainer {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+  }
+
+  .imageContainer img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 12px;
+  }
+
+  .details {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .username h4 {
+    font-size: 18px;
+  }
+
+  .username h6 {
+    font-size: 14px;
+  }
+
+  .bio p {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+
+  .followTable {
+    margin-top: 12px;
+  }
+
+  .posts,
+  .following,
+  .follower {
+    font-size: 12px;
+  }
+
+  .post {
+    margin-top: 12px;
+  }
+}

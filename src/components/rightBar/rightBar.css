@@ -1,0 +1,113 @@
+.rightBar {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 300px;
+  height: calc(100% - 70px);
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.rightBar.darkMode {
+  color: black;
+}
+
+.rightBarContainer {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.rightBarContainer.darkMode {
+  background-color: #242526;
+  color: #fff;
+}
+
+.rightBarHeader {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rightBarContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightBarCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rightBarCard:hover {
+  background-color: #f0f2f5;
+}
+
+.rightBarUser {
+  display: flex;
+  align-items: center;
+  width: 160px;
+}
+
+.rightBarImageContainer {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.rightBarImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rightBarUserDetails {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.rightBarUserDetails p {
+  margin: 0;
+  color: #666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.rightBarButton {
+  margin-left: auto;
+}
+
+.rightBarButton button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rightBarButton button:hover {
+  background-color: #0e5a8a;
+}
+
+@media (max-width: 768px) {
+  .rightBar {
+    display: none;
+  }
+}

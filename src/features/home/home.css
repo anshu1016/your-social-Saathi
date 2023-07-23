@@ -1,0 +1,88 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.rightBarThing {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.rightBarScrollContainer {
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.filter-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.postPart {
+  width: 100%;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    padding: 12px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text {
+    margin-bottom: 8px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+
+  .postPart {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}

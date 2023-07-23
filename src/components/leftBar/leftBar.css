@@ -1,0 +1,126 @@
+/* leftBar.css */
+
+.leftBar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  overflow: auto;
+}
+
+.innerLeftBar {
+  padding: 20px;
+}
+
+.innerLeftBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 18px; 
+  transition: all 0.3s ease;
+}
+
+.group .icon {
+  margin-right: 15px;
+  color: #555;
+  font-size: 22px; 
+}
+
+.group.active, .group:hover {
+  background-color: #d0d7dd; 
+  color: #0079d3; 
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  border-top: 1px solid #ccd0d5;
+}
+
+.user .image img {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user .userDetails .userName {
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  font-size: 18px; 
+}
+
+.user .userDetails .userHandler {
+  color: #606770;
+  margin: 0;
+  font-size: 16px; 
+}
+
+@media (max-width: 600px) {
+  .leftBar {
+    height: 60px;
+    width: 100%;
+    background-color: #0079d3;
+    position: fixed; /* changed from 'sticky' to 'fixed' */
+    bottom: 0; /* ensures that the bar is at the bottom of the viewport */
+    top: auto; /* prevent the bar from sticking to the top */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    z-index: 1000;
+    box-shadow: 0px -2px 10px rgba(0,0,0,0.1);
+  }
+
+  .innerLeftBar {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .innerLeftBar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  .group {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .group .icon {
+    margin: 0;
+    color: #f0f2f5; /* color of the icon in mobile view */
+  }
+
+  .group .itemName {
+    display: none;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .group.active, .group:hover {
+    background-color: #0061a8; /* slightly darker color on active/hover in mobile view */
+    color: #f0f2f5;
+  }
+}

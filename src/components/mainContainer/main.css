@@ -1,0 +1,29 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.mainnContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.contentContainer {
+  display: flex;
+  flex-grow: 1;
+}
+.leftBarr {
+  flex: 0 0 250px;
+  background-color: red;
+}
+.feed {
+  flex-grow: 1;
+}
+.rightBarr {
+  flex: 0 0 250px;
+}
+@media (max-width: 768px) {
+  .rightBarr {
+    display: none;
+  }
+}
