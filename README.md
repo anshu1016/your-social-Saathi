@@ -1,3 +1,68 @@
+
+# Your Social Saathi
+
+Your Social Saathi is a social media application designed to bring people together. It offers a platform for users to share their thoughts, interact with others, and stay connected.
+
+![App Screenshot](./assets/app_screenshot.png)
+<img width="960" alt="image" src="https://github.com/anshu1016/your-social-Saathi/assets/69161719/b13a7953-63e5-4ff6-9027-26da9ce617a2">
+
+
+## Features
+
+- User Profiles: Create your personalized user profile.
+- Post Updates: Share updates and thoughts with the community.
+- Interaction: Comment, like, and interact with other users.
+- Search: Find and connect with friends on the platform.
+- Responsive Design: The application is fully responsive and can be used on various devices of different sizes.
+
+## Live Demo
+
+Experience the application live [here](https://your-social-saathi.vercel.app/).
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/anshu1016/your-social-Saathi.git
+```
+
+2. Navigate to the project directory
+
+```bash
+cd your-social-Saathi
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the local server
+
+```bash
+npm start
+```
+
+The application will start running on [http://localhost:3000](http://localhost:3000)
+
+## Technologies Used
+
+- React.js
+- MockBee Backend
+
+
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
